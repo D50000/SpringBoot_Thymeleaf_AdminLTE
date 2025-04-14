@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-    @GetMapping("/home")
+    @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("pageTitle", "首頁");
+        model.addAttribute("pageTitle", "Lading Page");
         return "index";
     }
 }
