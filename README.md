@@ -1,6 +1,6 @@
 # Spring Boot + Thymeleaf + AdminLTE v4 Integration (Air Gap Mode)
 
-This project demonstrates the integration of **Spring Boot**, **Thymeleaf**, and **AdminLTE v4**. It is configured to work in **air gap mode**, meaning all required assets are hosted locally, avoiding reliance on external CDNs.
+This project demonstrates the integration of **Spring Boot**, **Thymeleaf**, and **AdminLTE v4**. It is configured to work in **air gap mode**, _meaning all required assets are hosted locally, avoiding reliance on external CDNs._
 
 ## Features
 
