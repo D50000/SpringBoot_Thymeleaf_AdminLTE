@@ -1,102 +1,136 @@
 # Spring Boot + Thymeleaf + AdminLTE v4 Integration (Air Gap Mode)
 
-This project demonstrates the integration of **Spring Boot**, **Thymeleaf**, and **AdminLTE v4**. It is configured to work in **air gap mode**, _meaning all required assets are hosted locally, avoiding reliance on external CDNs._
+This project demonstrates the integration of **Spring Boot**, **Thymeleaf**, and **AdminLTE v4**. It is designed to work in **air gap mode**, meaning all required assets (CSS, JS, fonts, etc.) are hosted locally, _ensuring the application can run in environments without internet access._
 
-## Features
+---
 
-- **Spring Boot**: Backend framework for building Java-based web applications.
-- **Thymeleaf**: Server-side template engine for rendering dynamic HTML content.
-- **AdminLTE v4**: A modern admin dashboard template based on Bootstrap 5.
-- **Air Gap Mode**: All external dependencies (CSS, JS, fonts, etc.) are downloaded and served locally.
+## ✨ Features
 
-## Project Structure
+- **Spring Boot**: A powerful backend framework for building Java-based web applications.
+- **Thymeleaf**: A modern server-side template engine for rendering dynamic HTML content.
+- **AdminLTE v4**: A sleek and responsive admin dashboard template built on Bootstrap 5.
+- **Air Gap Mode**: All external dependencies are downloaded and served locally for offline compatibility.
+- **Customizable**: Easily extend and modify templates, styles, and functionality.
+
+---
+
+## 📂 Project Structure
 
 ```
 /src/main/resources/
 ├── static/
-│   ├── vendor/          # Local copies of third-party libraries
+│   ├── vendor/          # Local copies of third-party libraries (Bootstrap, ApexCharts, etc.)
 │   ├── css/             # Custom CSS files
 │   ├── js/              # Custom JavaScript files
 ├── templates/           # Thymeleaf templates
 │   ├── index.html       # Main dashboard page
 ```
 
-## Prerequisites
+---
+
+## 🛠️ Prerequisites
+
+Before running the project, ensure you have the following installed:
 
 - **Java 17** or higher
 - **Maven** or **Gradle**
 - **Spring Boot** (pre-configured in the project)
 
-## Setup Instructions
+---
 
-1. **Clone the Repository**:
+## 🚀 Getting Started
 
-   ```bash
-   git clone https://github.com/D50000/SpringBoot_Thymeleaf_AdminLTE.git
-   cd SpringBoot_Thymeleaf_AdminLTE
-   ```
+Follow these steps to set up and run the project:
 
-2. **Build the Project**:
-   Use Maven or Gradle to build the project:
+### 1. Clone the Repository
 
-   ```bash
-   # Using Maven
-   mvn clean install
+```bash
+git clone https://github.com/your-repo/SpringBoot_Thymeleaf_AdminLTE.git
+cd SpringBoot_Thymeleaf_AdminLTE
+```
 
-   # Using Gradle
-   gradle build
-   ```
+### 2. Build the Project
 
-3. **Run the Application**:
-   Start the Spring Boot application:
+Use Maven or Gradle to build the project:
 
-   ```bash
-   mvn spring-boot:run
-   ```
+```bash
+# Using Maven
+mvn clean install
 
-4. **Access the Dashboard**:
-   Open your browser and navigate to:
-   ```
-   http://localhost:8080
-   ```
+# Using Gradle
+gradle build
+```
 
-## Air Gap Mode Details
+### 3. Run the Application
 
-All external dependencies (e.g., Bootstrap, OverlayScrollbars, ApexCharts) have been downloaded and placed in the `static/vendor/` directory. This ensures the application can run in environments without internet access.
+Start the Spring Boot application:
+
+```bash
+mvn spring-boot:run
+```
+
+### 4. Access the Dashboard
+
+Open your browser and navigate to:
+
+```
+http://localhost:8080
+```
+
+---
+
+## 🌐 Air Gap Mode Details
+
+This project is configured to work in **air gap mode**, meaning it does not rely on external CDNs. All required assets are downloaded and stored locally in the `static/vendor/` directory.
 
 ### Key Dependencies
 
-- **Bootstrap 5**: `/static/vendor/bootstrap/`
-- **OverlayScrollbars**: `/static/vendor/overlayscrollbars/`
-- **ApexCharts**: `/static/vendor/apexcharts/`
-- **JSVectorMap**: `/static/vendor/jsvectormap/`
-- **Fontsource Source Sans 3**: `/static/vendor/fontsource/source-sans-3/`
+| Dependency                   | Local Path                                 |
+| ---------------------------- | ------------------------------------------ |
+| **Bootstrap 5**              | `/static/vendor/bootstrap/`                |
+| **OverlayScrollbars**        | `/static/vendor/overlayscrollbars/`        |
+| **ApexCharts**               | `/static/vendor/apexcharts/`               |
+| **JSVectorMap**              | `/static/vendor/jsvectormap/`              |
+| **Fontsource Source Sans 3** | `/static/vendor/fontsource/source-sans-3/` |
 
-## Customization
+---
 
-1. **Thymeleaf Templates**:
-   Modify the HTML files in the `src/main/resources/templates/` directory to customize the UI.
+## 🖌️ Customization
 
-2. **Static Assets**:
-   Add or update CSS/JS files in the `src/main/resources/static/` directory.
+### 1. Modify Thymeleaf Templates
 
-3. **Spring Boot Configuration**:
-   Update application properties in `src/main/resources/application.properties`.
+All templates are located in the `src/main/resources/templates/` directory. You can edit these files to customize the UI.
 
-## Screenshots
+### 2. Update Static Assets
+
+Add or modify CSS/JS files in the `src/main/resources/static/` directory to change styles or add custom functionality.
+
+### 3. Configure Spring Boot
+
+Update application properties in `src/main/resources/application.properties` to adjust server settings, view resolver configurations, etc.
+
+---
+
+## 📸 Screenshots
 
 ### Dashboard
 
 ![Dashboard Screenshot](https://camo.githubusercontent.com/e9f53efb132911a8a11da2a9807291eb8414cdaf7b556448b321eaaf193ed7eb/68747470733a2f2f61646d696e6c74652e696f2f41646d696e4c5445332e706e67)
 
-## License
+---
+
+## 📝 License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Contributing
+---
 
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
+## 🤝 Contributing
 
-## Support
+Contributions are welcome! If you have suggestions or improvements, feel free to submit a pull request or open an issue.
+
+---
+
+## 📧 Support
 
 For any questions or issues, please contact [aoe102198@gmail.com](aoe102198@gmail.com).
